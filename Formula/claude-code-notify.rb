@@ -33,11 +33,12 @@ class ClaudeCodeNotify < Formula
 
   test do
     # Dry-run mode prints fields instead of posting a notification.
+    ENV["CLAUDE_NOTIFY_DRY_RUN"] = "1"
+    ENV["CLAUDE_NOTIFY_SKIP_IF_FRONTMOST"] = ""
     output = pipe_output(
       "#{bin}/claude-code-notify",
       '{"hook_event_name":"Stop","stop_reason":"end_turn","last_assistant_message":"hi"}',
       0,
-      env: { "CLAUDE_NOTIFY_DRY_RUN" => "1", "CLAUDE_NOTIFY_SKIP_IF_FRONTMOST" => "" },
     )
     assert_match "subtitle=Done", output
     assert_match "message=hi", output
