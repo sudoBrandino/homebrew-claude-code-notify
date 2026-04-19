@@ -1,8 +1,8 @@
 class ClaudeCodeNotify < Formula
   desc "Notification hook for Claude Code — quiet when your terminal is already frontmost"
   homepage "https://github.com/sudoBrandino/claude-code-notify"
-  url "https://github.com/sudoBrandino/claude-code-notify/archive/refs/tags/v0.3.0.tar.gz"
-  sha256 "ffd5ccd8afde4982439a0a38906c128af981627f3314f6264a70e2529d3d2d0d"
+  url "https://github.com/sudoBrandino/claude-code-notify/archive/refs/tags/v0.3.1.tar.gz"
+  sha256 "e0047afedcb741c861a43e55f89148da9e311f3ec3394144556e127d3e2b3e2a"
   license "MIT"
 
   # jq is required on both platforms: Linux uses it for JSON parsing at runtime;
