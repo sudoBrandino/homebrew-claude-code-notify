@@ -4,7 +4,6 @@ class ClaudeCodeNotify < Formula
   url "https://github.com/sudoBrandino/claude-code-notify/archive/refs/tags/v0.1.0.tar.gz"
   sha256 "5276fbb6af53467a5f282e6acd813479a50aeb28f9a900015e84de71c1f6ffa0"
   license "MIT"
-  version "0.1.0"
 
   on_linux do
     depends_on "jq"
